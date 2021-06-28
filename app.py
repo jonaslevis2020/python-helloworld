@@ -26,6 +26,12 @@ def metrics():
     app.logger.info('Metrics request successfull')
     return response
 
+@app.route("/jonas")
+def jonas():
+    app.logger.info('Main request successfull')
+
+    return "Hello Jonas, you are online :)"
+
 @app.route("/")
 def hello():
     app.logger.info('Main request successfull')
